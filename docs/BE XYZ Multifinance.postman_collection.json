@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "714155b8-99e4-4e42-b3a4-453e5d54f29c",
+		"name": "BE XYZ Multifinance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:1323/konsumen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nik\": \"351813308409003382\",\n    \"full_name\": \"Adhi Dwi Saputro\",\n    \"legal_name\": \"Adhi Dwi Saputro\",\n    \"tempat_lahir\": \"Nganjuk\",\n    \"tanggal_lahir\": \"2023-10-09\",\n    \"gaji\": 13000000,\n    \"foto_ktp\": \"dropbox.com/adhi/foto_ktp\",\n    \"foto_selfie\": \"dropbox.com/adhi/foto_selfie\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1323/konsumen",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"konsumen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1323/konsumen/351813308409003382",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1323/konsumen/351813308409003382",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"konsumen",
+						"351813308409003382"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1323/limit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nik\": \"351813308409003382\",\n    \"tenor\": 5,\n    \"limit\": 1000001\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1323/limit",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"limit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1323/limit/351813308409003382",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1323/limit/351813308409003382",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"limit",
+						"351813308409003382"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1323/limit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"limit_id\": \"351813308409003382-2\",\n    \"limit\": 99\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1323/limit",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"limit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1323/transaksi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nomor_kontrak\": \"123\",\n    \"nik\": \"351813308409003382\",\n    \"nama_asset\": \"mobil\",\n    \"otr\": 200000000,\n    \"admin_fee\": 321000,\n    \"jumlah_cicilan\": 100000,\n    \"jumlah_bunga\": 94830\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1323/transaksi",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"transaksi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:1323/transaksi/351813308409003382",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:1323/transaksi/351813308409003382",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"transaksi",
+						"351813308409003382"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
